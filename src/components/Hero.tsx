@@ -4,11 +4,12 @@ import { useState, useEffect } from "react";
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
-  // Placeholder images - black and white barbershop related
+  // Your actual haircut photos
   const images = [
-    "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=1200&h=800&fit=crop&auto=format&sat=-100",
-    "https://images.unsplash.com/photo-1527576539890-dfa815648363?w=1200&h=800&fit=crop&auto=format&sat=-100",
-    "https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?w=1200&h=800&fit=crop&auto=format&sat=-100",
+    "/lovable-uploads/18377861-25cb-43e3-a2d0-aa3ffcca1421.png",
+    "/lovable-uploads/7d508e49-f74f-42b5-9a70-adc68402c70e.png",
+    "/lovable-uploads/39830751-0bea-43a1-9ef3-e98bae9ee4cf.png",
+    "/lovable-uploads/08e3238a-ee4d-4d60-ad3f-2ca6580dd071.png",
   ];
 
   useEffect(() => {
@@ -39,8 +40,8 @@ const Hero = () => {
           >
             <img
               src={image}
-              alt={`Haircut ${index + 1}`}
-              className="w-full h-full object-cover"
+              alt={`Professional haircut ${index + 1}`}
+              className="w-full h-full object-cover filter grayscale"
             />
             <div className="absolute inset-0 bg-black/40"></div>
           </div>
