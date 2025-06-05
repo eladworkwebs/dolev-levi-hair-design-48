@@ -64,7 +64,7 @@ const Gallery = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110 filter grayscale"
+                className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300">
                 <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -89,7 +89,7 @@ const Gallery = () => {
             <img
               src={selectedImage}
               alt="Selected work"
-              className="max-w-full max-h-full object-contain filter grayscale"
+              className="max-w-full max-h-full object-contain"
             />
           </div>
         )}
