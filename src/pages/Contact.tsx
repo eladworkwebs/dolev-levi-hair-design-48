@@ -22,16 +22,16 @@ const Contact = () => {
   };
 
   return (
-    <div className="pt-24 pb-20 px-4">
+    <div className="pt-24 pb-20 px-4" dir="rtl">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-montserrat font-bold mb-6">
-            Get In Touch
+            צרו קשר
           </h1>
           <p className="text-lg text-gray-600 font-opensans max-w-2xl mx-auto">
-            Ready for your next haircut? Contact us to book your appointment 
-            or visit us at our Karmiel location.
+            מוכנים לתספורת הבאה שלכם? צרו איתנו קשר לקביעת תור 
+            או בואו לבקר אותנו במיקום שלנו בכרמיאל.
           </p>
         </div>
 
@@ -39,17 +39,17 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="animate-fade-in">
             <h2 className="text-2xl font-montserrat font-semibold mb-8">
-              Contact Information
+              פרטי התקשרות
             </h2>
             
             <div className="space-y-6">
               {/* Phone */}
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4 space-x-reverse">
                 <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center flex-shrink-0">
                   <Phone className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-montserrat font-semibold mb-1">Phone</h3>
+                  <h3 className="font-montserrat font-semibold mb-1">טלפון</h3>
                   <button
                     onClick={handlePhoneClick}
                     className="text-gray-600 font-opensans hover:text-black transition-colors"
@@ -60,43 +60,43 @@ const Contact = () => {
               </div>
 
               {/* Location */}
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4 space-x-reverse">
                 <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center flex-shrink-0">
                   <MapPin className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-montserrat font-semibold mb-1">Location</h3>
+                  <h3 className="font-montserrat font-semibold mb-1">מיקום</h3>
                   <button
                     onClick={handleMapClick}
                     className="text-gray-600 font-opensans hover:text-black transition-colors"
                   >
-                    Karmiel, Israel
+                    כרמיאל, ישראל
                   </button>
                 </div>
               </div>
 
               {/* Hours */}
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4 space-x-reverse">
                 <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center flex-shrink-0">
                   <Clock className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-montserrat font-semibold mb-1">Hours</h3>
+                  <h3 className="font-montserrat font-semibold mb-1">שעות פעילות</h3>
                   <div className="text-gray-600 font-opensans space-y-1">
-                    <div>Sunday - Thursday: 9:00 AM - 7:00 PM</div>
-                    <div>Friday: 9:00 AM - 3:00 PM</div>
-                    <div>Saturday: Closed</div>
+                    <div>ראשון - חמישי: 9:00 - 19:00</div>
+                    <div>שישי: 9:00 - 15:00</div>
+                    <div>שבת: סגור</div>
                   </div>
                 </div>
               </div>
 
               {/* Instagram */}
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4 space-x-reverse">
                 <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center flex-shrink-0">
                   <Instagram className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-montserrat font-semibold mb-1">Instagram</h3>
+                  <h3 className="font-montserrat font-semibold mb-1">אינסטגרם</h3>
                   <button
                     onClick={handleInstagramClick}
                     className="text-gray-600 font-opensans hover:text-black transition-colors"
@@ -113,13 +113,13 @@ const Contact = () => {
                 onClick={handleWhatsAppClick}
                 className="w-full bg-black text-white py-3 px-6 font-montserrat font-semibold tracking-wider hover:bg-gray-800 transition-colors duration-300"
               >
-                BOOK VIA WHATSAPP
+                קביעת תור בוואטסאפ
               </button>
               <button
                 onClick={handlePhoneClick}
                 className="w-full border-2 border-black text-black py-3 px-6 font-montserrat font-semibold tracking-wider hover:bg-black hover:text-white transition-all duration-300"
               >
-                CALL NOW
+                התקשרו עכשיו
               </button>
             </div>
           </div>
@@ -127,7 +127,7 @@ const Contact = () => {
           {/* Map Placeholder */}
           <div className="animate-fade-in" style={{animationDelay: '0.3s'}}>
             <h2 className="text-2xl font-montserrat font-semibold mb-8">
-              Find Us
+              מצאו אותנו
             </h2>
             
             <div 
@@ -137,19 +137,19 @@ const Contact = () => {
               <div className="text-center">
                 <MapPin className="h-12 w-12 text-gray-600 mx-auto mb-4" />
                 <p className="font-montserrat font-semibold text-gray-700">
-                  Click to Open in Google Maps
+                  לחצו לפתיחה במפות גוגל
                 </p>
                 <p className="text-gray-600 font-opensans">
-                  Karmiel, Israel
+                  כרמיאל, ישראל
                 </p>
               </div>
             </div>
 
             <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-              <h3 className="font-montserrat font-semibold mb-2">Getting Here</h3>
+              <h3 className="font-montserrat font-semibold mb-2">איך להגיע</h3>
               <p className="text-gray-600 font-opensans text-sm">
-                Located in the heart of Karmiel with convenient parking available. 
-                Easily accessible by public transportation and car.
+                ממוקמים במרכז כרמיאל עם חניה נוחה זמינה. 
+                נגיש בקלות בתחבורה ציבורית וברכב.
               </p>
             </div>
           </div>

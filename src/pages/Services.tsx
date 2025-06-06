@@ -2,40 +2,40 @@
 const Services = () => {
   const services = [
     {
-      name: "Signature Cut",
+      name: "תספורת מיוחדת",
       price: "₪80",
-      description: "Precision haircut tailored to your style and face shape",
-      duration: "45 min"
+      description: "תספורת מדויקת המותאמת לסגנונך וצורת הפנים שלך",
+      duration: "45 דק'"
     },
     {
-      name: "Classic Fade",
+      name: "פייד קלאסי",
       price: "₪70",
-      description: "Professional fade cut with sharp lines and perfect blend",
-      duration: "40 min"
+      description: "תספורת פייד מקצועית עם קווים חדים ומעבר מושלם",
+      duration: "40 דק'"
     },
     {
-      name: "Beard Trim & Style",
+      name: "עיצוב זקן",
       price: "₪50",
-      description: "Precise beard trimming and styling for the perfect look",
-      duration: "30 min"
+      description: "גיזום ועיצוב זקן מדויק למראה מושלם",
+      duration: "30 דק'"
     },
     {
-      name: "Full Service",
+      name: "שירות מלא",
       price: "₪120",
-      description: "Complete haircut and beard styling experience",
-      duration: "75 min"
+      description: "חוויה מלאה של תספורת ועיצוב זקן",
+      duration: "75 דק'"
     },
     {
-      name: "Hair Wash & Style",
+      name: "שטיפה ועיצוב",
       price: "₪40",
-      description: "Professional wash and styling service",
-      duration: "25 min"
+      description: "שירות שטיפה ועיצוב מקצועי",
+      duration: "25 דק'"
     },
     {
-      name: "Student Cut",
+      name: "תספורת סטודנט",
       price: "₪60",
-      description: "Special pricing for students (ID required)",
-      duration: "35 min"
+      description: "מחיר מיוחד לסטודנטים (נדרש תעודת זהות)",
+      duration: "35 דק'"
     }
   ];
 
@@ -47,16 +47,16 @@ const Services = () => {
   };
 
   return (
-    <div className="pt-24 pb-20 px-4">
+    <div className="pt-24 pb-20 px-4" dir="rtl">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-montserrat font-bold mb-6">
-            Services & Pricing
+            שירותים ומחירים
           </h1>
           <p className="text-lg text-gray-600 font-opensans max-w-2xl mx-auto">
-            Professional barbering services with transparent pricing. 
-            Each service includes consultation and styling advice.
+            שירותי ברברינג מקצועיים עם תמחור שקוף. 
+            כל שירות כולל ייעוץ ועצות סטיילינג.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ const Services = () => {
                 {service.description}
               </p>
               <span className="text-sm text-gray-500 font-opensans">
-                Duration: {service.duration}
+                משך זמן: {service.duration}
               </span>
             </div>
           ))}
@@ -89,31 +89,31 @@ const Services = () => {
         {/* Call to Action */}
         <div className="text-center bg-gray-50 p-8 rounded-lg animate-fade-in">
           <h3 className="text-2xl font-montserrat font-semibold mb-4">
-            Ready to Book?
+            מוכנים לקבוע תור?
           </h3>
           <p className="text-gray-600 font-opensans mb-6">
-            Contact us via WhatsApp to schedule your appointment
+            צרו איתנו קשר בוואטסאפ לתיאום התור שלכם
           </p>
           <button
             onClick={handleBookService}
             className="bg-black text-white px-8 py-3 font-montserrat font-semibold tracking-wider hover:bg-gray-800 transition-colors duration-300"
           >
-            BOOK APPOINTMENT
+            קביעת תור
           </button>
         </div>
 
         {/* Additional Info */}
         <div className="mt-12 grid md:grid-cols-2 gap-8 text-center">
           <div className="animate-fade-in" style={{animationDelay: '0.6s'}}>
-            <h4 className="font-montserrat font-semibold mb-3">Walk-ins Welcome</h4>
+            <h4 className="font-montserrat font-semibold mb-3">מקבלים הגעה ללא תיאום</h4>
             <p className="text-gray-600 font-opensans text-sm">
-              While appointments are preferred, we accept walk-ins subject to availability
+              למרות שמומלץ לתאם מראש, אנו מקבלים הגעה ללא תיאום בכפוף לזמינות
             </p>
           </div>
           <div className="animate-fade-in" style={{animationDelay: '0.8s'}}>
-            <h4 className="font-montserrat font-semibold mb-3">Payment Methods</h4>
+            <h4 className="font-montserrat font-semibold mb-3">אמצעי תשלום</h4>
             <p className="text-gray-600 font-opensans text-sm">
-              Cash, Credit Cards, and Mobile Payments Accepted
+              מזומן, כרטיסי אשראי ותשלומים ניידים מתקבלים
             </p>
           </div>
         </div>

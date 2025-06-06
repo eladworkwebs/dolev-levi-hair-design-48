@@ -5,37 +5,37 @@ const Testimonials = () => {
       name: "אמיר כהן",
       text: "דולב הוא ספר מקצועי ברמה הגבוהה ביותר. כל תספורת אצלו היא יצירת אמנות. ממליץ בחום!",
       rating: 5,
-      service: "Signature Cut"
+      service: "תספורת מיוחדת"
     },
     {
       name: "יוסי לוי",
       text: "שירות מעולה ותספורת מושלמת. דולב יודע בדיוק מה מתאים לכל אחד. כבר שנתיים שאני בא אליו בלבד.",
       rating: 5,
-      service: "Full Service"
+      service: "שירות מלא"
     },
     {
       name: "רון מזרחי",
       text: "המקום הכי טוב לתספורת בכרמיאל! דולב מקצועי, ידידותי ותמיד נותן יעוץ מצוין.",
       rating: 5,
-      service: "Classic Fade"
+      service: "פייד קלאסי"
     },
     {
       name: "דני שמואל",
       text: "אחרי הרבה חיפושים מצאתי את דולב. תספורת מדויקת ושירות ברמה גבוהה. בהחלט שווה!",
       rating: 5,
-      service: "Beard Trim & Style"
+      service: "עיצוב זקן"
     },
     {
       name: "מתן אלון",
       text: "דולב הוא אמן אמיתי! כל פעם יוצא מהסלון שלו עם הרגשה טובה ותספורת מושלמת.",
       rating: 5,
-      service: "Signature Cut"
+      service: "תספורת מיוחדת"
     },
     {
       name: "עידו גולדברג",
       text: "שירות מקצועי ואישי. דולב באמת מבין מה הלקוח רוצה ומבצע בדיוק. ממליץ בחום!",
       rating: 5,
-      service: "Full Service"
+      service: "שירות מלא"
     }
   ];
 
@@ -47,16 +47,16 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="pt-24 pb-20 px-4">
+    <div className="pt-24 pb-20 px-4" dir="rtl">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-montserrat font-bold mb-6">
-            What Our Clients Say
+            מה הלקוחות שלנו אומרים
           </h1>
           <p className="text-lg text-gray-600 font-opensans max-w-2xl mx-auto">
-            Real reviews from satisfied clients who trust Dolev Levi Hair Design 
-            for their grooming needs.
+            ביקורות אמיתיות מלקוחות מרוצים שסומכים על דולב לוי עיצוב שיער 
+            לצרכי הטיפוח שלהם.
           </p>
         </div>
 
@@ -98,17 +98,17 @@ const Testimonials = () => {
         {/* Call to Action */}
         <div className="text-center bg-gray-50 p-8 rounded-lg animate-fade-in">
           <h3 className="text-2xl font-montserrat font-semibold mb-4">
-            Join Our Satisfied Clients
+            הצטרפו ללקוחות המרוצים שלנו
           </h3>
           <p className="text-gray-600 font-opensans mb-6 max-w-2xl mx-auto">
-            Experience the difference that professional barbering makes. 
-            Book your appointment today and discover why our clients keep coming back.
+            התנסו בהבדל שברברינג מקצועי עושה. 
+            קבעו את התור שלכם היום וגלו למה הלקוחות שלנו חוזרים אלינו.
           </p>
           <button
             onClick={handleBookNow}
             className="bg-black text-white px-8 py-3 font-montserrat font-semibold tracking-wider hover:bg-gray-800 transition-colors duration-300"
           >
-            BOOK YOUR APPOINTMENT
+            קביעת תור
           </button>
         </div>
       </div>

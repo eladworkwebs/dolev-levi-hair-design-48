@@ -8,12 +8,12 @@ const Header = () => {
   const location = useLocation();
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Gallery", href: "/gallery" },
-    { name: "Services", href: "/services" },
-    { name: "Testimonials", href: "/testimonials" },
-    { name: "Contact", href: "/contact" },
+    { name: "בית", href: "/" },
+    { name: "אודות", href: "/about" },
+    { name: "גלריה", href: "/gallery" },
+    { name: "שירותים", href: "/services" },
+    { name: "המלצות", href: "/testimonials" },
+    { name: "יצירת קשר", href: "/contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -29,13 +29,13 @@ const Header = () => {
           {/* Logo - visible on desktop */}
           <Link to="/" className="flex items-center md:block hidden">
             <h1 className="text-xl font-montserrat font-bold text-black">
-              Dolev Levi
-              <span className="block text-sm font-normal tracking-wider">HAIR DESIGN</span>
+              דולב לוי
+              <span className="block text-sm font-normal tracking-wider">עיצוב שיער</span>
             </h1>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8 space-x-reverse">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -54,11 +54,11 @@ const Header = () => {
           </nav>
 
           {/* Phone Number and Mobile Menu */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 space-x-reverse">
             {/* Phone Number */}
             <button
               onClick={handlePhoneCall}
-              className="flex items-center space-x-2 text-black hover:text-gray-600 transition-colors duration-200"
+              className="flex items-center space-x-2 space-x-reverse text-black hover:text-gray-600 transition-colors duration-200"
             >
               <Phone className="h-4 w-4" />
               <span className="font-opensans font-medium hidden sm:block">052-736-5820</span>
@@ -86,8 +86,8 @@ const Header = () => {
               {/* Logo in mobile menu */}
               <Link to="/" className="flex justify-center mb-6" onClick={() => setIsMenuOpen(false)}>
                 <h1 className="text-xl font-montserrat font-bold text-black text-center">
-                  Dolev Levi
-                  <span className="block text-sm font-normal tracking-wider">HAIR DESIGN</span>
+                  דולב לוי
+                  <span className="block text-sm font-normal tracking-wider">עיצוב שיער</span>
                 </h1>
               </Link>
               

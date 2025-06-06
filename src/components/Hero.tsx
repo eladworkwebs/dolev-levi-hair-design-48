@@ -40,7 +40,7 @@ const Hero = () => {
           >
             <img
               src={image}
-              alt={`Professional haircut ${index + 1}`}
+              alt={`תספורת מקצועית ${index + 1}`}
               className="w-full h-full object-cover filter grayscale"
             />
             <div className="absolute inset-0 bg-black/40"></div>
@@ -51,19 +51,19 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 animate-fade-in">
         <h1 className="text-5xl md:text-7xl font-montserrat font-bold mb-4 tracking-tight">
-          DOLEV LEVI
+          דולב לוי
         </h1>
         <p className="text-xl md:text-2xl font-opensans font-light mb-2 tracking-widest">
-          HAIR DESIGN
+          עיצוב שיער
         </p>
         <p className="text-lg md:text-xl font-opensans mb-8 opacity-90">
-          Where Style Meets Skill
+          איפה שסטייל פוגש מיומנות
         </p>
         <button
           onClick={handleBookNow}
           className="bg-white text-black px-8 py-3 font-montserrat font-semibold tracking-wider hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
         >
-          BOOK NOW
+          קבע תור עכשיו
         </button>
       </div>
 
@@ -76,7 +76,7 @@ const Hero = () => {
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               index === currentImage ? "bg-white" : "bg-white/50"
             }`}
-            aria-label={`Go to image ${index + 1}`}
+            aria-label={`עבור לתמונה ${index + 1}`}
           />
         ))}
       </div>

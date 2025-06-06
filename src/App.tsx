@@ -23,7 +23,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div className="min-h-screen bg-white text-black font-opensans">
+        <div className="min-h-screen bg-white text-black font-opensans" dir="rtl">
           <Header />
           <main>
             <Routes>
